@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edufold</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+      integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/0f15e4bbd2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="img/logo.png" alt="Edufold logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact us</h1>
+    </section>
+
+    <!-- Contact -->
+
+    <section class="location">
+      <iframe
+        width="600"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=https%3A%2F%2Fwww.google.com%2Fmaps%2Fplace%2F61%2BLauder%2BAve%2C%2BToronto%2C%2BON%2BM6H%2B3E2%2F%4043.6760447%2C-79.4383032%2C17z%2Fdata%3D!4m6!3m5!1s0x882b3470e8b9804f%3A0x87da258b82f4b03e!8m2!3d43.6767325!4d-79.4386766!16s%252Fg%252F11c1fn_q6h%3Fauthuser%3D0"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5>242 Chaplin Crescent</h5>
+              <p>Toronto, ON M5P 2M4</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h5>+1(467)346-2345</h5>
+              <p>Monday to Saturday, 10AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h5>info@edufold.ca</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input type="text" name="sender" placeholder="Enter your name" required />
+            <input type="email" name="email" placeholder="Enter email address" required />
+            <input type="text" name="subject" placeholder="Enter your subject" required />
+            <textarea rows="8" name="messsage" placeholder="Message" required></textarea>
+            <button type="submit" class="hero-button red-button">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nulla
+        ac nulla vestibulum fermentum.<br />
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; In hac habitasse platea dictumst.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+      <p>Made with <i class="fa-regular fa-heart"></i> by Easy Tutorials</p>
+    </section>
+
+    <!-- JavaScript to Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
